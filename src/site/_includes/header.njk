@@ -1,0 +1,12 @@
+<header>
+  <ul class="nav">
+    <li class="nav__item {% if page.url == '/' %} nav__item--active {% endif %}">
+      <a href="/" class="nav__link">home</a>
+    </li>
+    <li class="nav__item {% if page.url == '/about/' %} nav__item--active {% endif %}">
+      <a href="/about" class="nav__link">about</a>
+    </li>
+  </ul>
+  <h1>{{ title }}</h1>
+  {%- if subtitle %}<p class="subtitle">{{ subtitle | safe }}</p>{% endif %}
+</header>
