@@ -82,9 +82,8 @@ ul, ol {
   padding-left: 1em;
 }
 
-a:link,
-a:visited {
-  color: $text-color;
+a {
+  color: #0e76a9;
   text-decoration: none;  
 }
 a:hover,
@@ -121,6 +120,7 @@ a:focus {
   width: 9em;
   text-align: left;  
   text-decoration: none;
+  color: $text-color;
 }
 
 .nav__link:hover, 
@@ -135,6 +135,9 @@ a:focus {
   font-weight: 600;
 }
 
+.article__link {
+  color: $text-color;
+}
 
 code {
   font-size: 0.8em;
