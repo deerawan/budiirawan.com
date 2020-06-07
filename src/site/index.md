@@ -1,5 +1,5 @@
 ---
-subtitle: 👨‍💻 I'm a Frontend Engineer who passionate in testing, clean code and automation. 
+subtitle: 👨‍💻 I'm a Frontend Developer who is passionate in testing, clean code and automation. 
 layout: layouts/base.njk
 pagination:
   data: collections.post
