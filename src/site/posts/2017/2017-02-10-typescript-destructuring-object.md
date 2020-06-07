@@ -1,6 +1,7 @@
 ---
 title: "Typescript: Destructuring Object"
 date: 2017-02-10
+category: 'typescript'
 ---
 
 In last post, we talked about [destructuring array](http://budiirawan.com/typescript-destructuring-array/ "Typescript: Destructuring Array"). In this post, we're going to talk about destructuring object in Typescript.

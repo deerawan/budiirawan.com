@@ -1,6 +1,7 @@
 ---
 title: "Type Inference in Typescript"
 date: 2019-02-10
+category: 'typescript'
 tags: ['typescript']
 ---
 

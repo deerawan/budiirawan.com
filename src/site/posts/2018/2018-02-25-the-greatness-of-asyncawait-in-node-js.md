@@ -1,6 +1,7 @@
 ---
 title: "The Greatness of Async/Await in Node.js"
 date: 2018-02-25
+category: nodejs
 ---
 
 I've been exploring async/await in Node.js 8. This new feature is totally wicked. It could change our promise-based code becomes cleaner and more readable. Let's see how it works.

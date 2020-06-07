@@ -1,6 +1,7 @@
 ---
 title: "Typescript: Destructuring Array"
 date: 2017-01-14
+category: 'typescript'
 ---
 
 Literally, destructuring is a feature of javascript(EcmaScript 2015) but Typescript also supports it. This feature allows you to extract data from array and object. But in this post, we will focus on destructuring array.

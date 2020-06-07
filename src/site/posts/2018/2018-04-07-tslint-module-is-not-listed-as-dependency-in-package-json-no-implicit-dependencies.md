@@ -1,6 +1,7 @@
 ---
 title: "[tslint] Module xxx is not listed as dependency in package.json (no-implicit-dependencies)"
 date: 2018-04-07
+category: typescript
 ---
 
 ### Problem

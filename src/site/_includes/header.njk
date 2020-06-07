@@ -1,4 +1,8 @@
 <header>
+  <div class="header">
+    <img src="/images/profile.png" alt="budi irawan" />
+    <h1 class="header__title">Budi Irawan</h1>
+  </div>
   <ul class="nav">
     <li class="nav__item {% if page.url == '/' %} nav__item--active {% endif %}">
       <a href="/" class="nav__link">home</a>
@@ -6,7 +10,7 @@
     <li class="nav__item {% if page.url == '/about/' %} nav__item--active {% endif %}">
       <a href="/about" class="nav__link">about</a>
     </li>
-  </ul>
-  <h1>{{ title }}</h1>
+  </ul>  
+  {%- if title %}<h1 class="title">{{ title }}</h1>{% endif %}
   {%- if subtitle %}<p class="subtitle">{{ subtitle | safe }}</p>{% endif %}
 </header>
