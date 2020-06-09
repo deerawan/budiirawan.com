@@ -1,5 +1,6 @@
 
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const pluginRss = require("@11ty/eleventy-plugin-rss");
 
 
 module.exports = function(config) {
@@ -16,6 +17,9 @@ module.exports = function(config) {
 
   // add support for syntax highlighting
   config.addPlugin(syntaxHighlight);
+
+  // add RSS plugin
+  config.addPlugin(pluginRss);
 
   // minify the html output
   config.addTransform("htmlmin", require("./src/utils/minify-html.js"));

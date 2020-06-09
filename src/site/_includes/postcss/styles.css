@@ -87,13 +87,6 @@ a:focus {
   border-bottom-color: $text-color;
 }
 
-.nakedLink a:link,
-.nakedLink a:visited,
-.nakedLink a:hover,
-.nakedLink a:focus {
-  border-bottom-style:none;
-}
-
 .header {
   display: flex;
 }
@@ -133,10 +126,7 @@ a:focus {
 
 .nav__link {  
   display: inline-block;
-  border-top-style: solid;
-  border-top-width: 3px;
-  border-top-color: $text-color;
-  border-bottom-style: none;
+  background: $gray-color;
   padding: .5em 0;
   margin-left: 0;
   margin-right: 0.7em;
@@ -173,7 +163,7 @@ a:focus {
 
 .article__link:hover {
   color: $text-color;
-  background: #f7f7f7;
+  background: $gray-color;
 }
 
 .article__link:hover .article__title {
