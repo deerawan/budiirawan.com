@@ -1,5 +1,5 @@
 ---
-title: About
+title: 👨‍💻 About
 layout: layouts/base.njk
 ---
 Hola, I’m Budi. I'm Indonesian live in Sydney. I currently work as a software engineer in Invoice2go.

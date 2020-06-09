@@ -96,12 +96,31 @@ a:focus {
 
 .header {
   display: flex;
-  align-items: center;  
 }
 
 .header__title {
   padding: 0;
   margin: 0 0 0 10px;
+}
+
+.header__link {
+  color: $text-color;
+  display: flex;
+  align-items: center;
+}
+
+.header__image {
+  border-radius: 50%;
+  border: 3px solid transparent;
+  transition: border-color 0.3s linear;
+}
+
+.header__link:hover .header__image {
+  border-color: $accent-color;
+}
+
+.header__link:hover .header__title {
+  color: $accent-color;
 }
 
 .nav {
@@ -134,14 +153,13 @@ a:focus {
 }
 
 .section__title {
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 
-.article {
+.article__link {
   display: flex;
   align-items: center;
-  margin-bottom: 2em;
-  padding-bottom: 1em;
+  padding: 2em 1em;
   border-bottom: 1px dashed #ccc;
 }
 
@@ -153,8 +171,19 @@ a:focus {
   color: $text-color;
 }
 
+.article__link:hover {
+  color: $text-color;
+  background: #f7f7f7;
+}
+
+.article__link:hover .article__title {
+  color: $accent-color;
+}
+
 .article__image {
   margin-right: 1em;
+  width: 40px;
+  height: 40px;
 }
 
 code {

@@ -12,15 +12,17 @@ pagination:
   <h2 class="section__title">🗒 Recent Articles</h2>
   {%- for post in posts -%}
   <article class="article">
-    <img class="article__image" src="/images/{{ post.data.category }}.png" alt="{{ post.data.category }}">
-    <div class="article__content">
-      <h3 class="article__title">    
-        <a class="article__link" href="{{ post.url }}">{{ post.data.title }}</a>
-      </h3>
-      <div class="article__meta">
-        <time datetime="{{ post.date }}">{{ post.date | dateDisplay }}</time>
+    <a class="article__link" href="{{ post.url }}">
+      {%- if post.data.category %}<img class="article__image" src="/images/{{ post.data.category }}.svg" alt="{{ post.data.category }}">{% endif %}
+      <div class="article__content">
+        <h3 class="article__title">    
+          {{ post.data.title }}
+        </h3>
+        <div class="article__meta">
+          <time datetime="{{ post.date }}">{{ post.date | dateDisplay }}</time>
+        </div>
       </div>
-    </div>
+    </a>
   </article>
   {%- endfor -%}
 </section>
