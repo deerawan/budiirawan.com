@@ -1,5 +1,6 @@
 {
   "layout" : "layouts/post.md",
   "tags" : "post",
-  "templateEngineOverride": "njk,md"
+  "templateEngineOverride": "njk,md",
+  "permalink": "{{ page.fileSlug }}/index.html"
 }

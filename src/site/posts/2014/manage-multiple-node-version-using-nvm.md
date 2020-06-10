@@ -1,6 +1,7 @@
 ---
 title: "Manage Multiple Node.js Version Using NVM"
 date: 2014-04-13
+category: nodejs
 ---
 
 Have you ever got a problem when you need to use two Node.js version on same machine? In my past work, I faced the problem when some libraries didn't work in Node.js 0.8.x but works in 0.10.x. So, I need to install more than one Node.js version on my machine. Then I use NVM. :)
@@ -11,11 +12,15 @@ Have you ever got a problem when you need to use two Node.js version on same mac
 
 NVM installation is easy for Unix based machine like OSX or Linux and make sure that your system has a **C++ compiler**.  Alright, open up your terminal and copy paste this command
 
+```bash
 curl https://raw.github.com/creationix/nvm/v0.4.0/install.sh | sh
+```
 
 if you DON'T have curl installed yet, you also can use wget
 
+```bash
 wget -qO- https://raw.github.com/creationix/nvm/v0.4.0/install.sh | sh
+```
 
 How about Windows? Just use [Vagrant](http://www.vagrantup.com) for your development. I use Windows and download Vagrant with OS Ubuntu 64.
 
