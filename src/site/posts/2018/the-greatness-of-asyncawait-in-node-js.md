@@ -9,7 +9,6 @@ I've been exploring async/await in Node.js 8. This new feature is totally wicked
 Try with simple promise
 
 ```javascript
-
 // a promise function
 const sayHello = (msg) => new Promise((resolve, reject) => resolve(`Hello ${msg}`));
 
@@ -23,7 +22,6 @@ greeting('thomas'); // output "Hello thomas"
 Compare with async/await
 
 ```javascript
-
 // Async/await version
 async function greetingV2(name) {
   const msg = await sayHello(name); // assign the response to msg
@@ -40,7 +38,6 @@ As you can see in async/await version, instead of using `then` to get the messag
 Noted that async function returns a promise.
 
 ```javascript
-
 async function getData(url) {
   return url;
 }
@@ -54,7 +51,6 @@ getData('facebook.com').then(console.log);
 And we use same way to handle error for async as in promise
 
 ```javascript
-
 async function getDataError(url) {
   throw new Error(`${url} is not exist`);
 }
@@ -67,7 +63,6 @@ getDataError('google.com').catch(err => console.log(err.message));
 Let's see how we construct async using function declaration
 
 ```javascript
-
 const getNumber = async () => 456;
 console.log(getNumber())
 
@@ -83,7 +78,6 @@ For async function that has await expression, it will pause the function executi
 We can define one or multiple await in async function.
 
 ```javascript
-
 const sayHello = (msg) => new Promise((resolve, reject) => resolve(`Hello ${msg}`));
 const sayGoodbye = (msg) => new Promise((resolve, reject) => resolve(`Goodbye ${msg}`));
 
@@ -104,15 +98,13 @@ greetings();
 In promise based code, we usually catch error with `catch` expression like following:
 
 ```javascript
-
 const rejectedPromise = new Promise((res, rej) => rej(new Error('some error')));
 rejectedPromise().catch(err => console.log(err.message));
 ```
 
 when we use await expression, we must use `try catch` expression, for example
 
-```
-
+```js
 try {
   const response = await rejectedPromise();
 } catch (err) {
@@ -144,7 +136,6 @@ printNumbers();
 Await can be used inside the loop
 
 ```javascript
-
 const counter = (number) => new Promise((resolve, reject) => resolve(`count ${number}`));
 
 async function sayHelloToAll() {
@@ -163,7 +154,6 @@ sayHelloToAll();
 If we use `map`, we can also use await.
 
 ```javascript
-
 async function sayHelloToAllMap() {
   return [0, 1, 2].map(async (number) => {
     const countMsg = await counter(number);
