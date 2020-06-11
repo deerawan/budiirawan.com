@@ -3,7 +3,6 @@ title: "Type Inference in Typescript"
 date: 2019-02-10
 category: 'typescript'
 tags: ['typescript']
-permalink: 'typescript-type-inteference'
 ---
 
 In this post, we are going to see how TypeScript can infer type in many ways. Type inference happens when there is no explicit type annotation.
