@@ -1,6 +1,7 @@
 ---
 title: "Send Emails using Amazon SES and Node.js"
 date: 2015-09-02
+category: aws
 ---
 
 [Amazon SES (Simple Email Service)](https://aws.amazon.com/documentation/ses/) is a solution that Amazon provides for sending emails. This service encourages you to pay Amazon what you use, so you can use as much or as little email you like. The coding example below shows how to configure Amazon SES in Node.js.
