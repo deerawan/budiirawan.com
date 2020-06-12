@@ -66,6 +66,10 @@ b, strong {
   font-weight: bold;
 }
 
+.post img {
+  width: 100%;
+}
+
 blockquote {
   background: $gray-color;
 }

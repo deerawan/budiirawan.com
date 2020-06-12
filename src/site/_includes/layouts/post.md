@@ -7,6 +7,6 @@ templateEngineOverride: njk, md
 <p class="date">
   Posted on <time datetime="{{ date }}">{{ date | dateDisplay }}</time>
 </p>
-<main>
+<main class="post">
   {{ content | safe }}
 </main>

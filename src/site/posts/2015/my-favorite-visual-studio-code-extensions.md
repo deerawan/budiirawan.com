@@ -1,6 +1,7 @@
 ---
 title: "My Favorite Visual Studio Code Extensions"
 date: 2015-12-31
+category: vscode
 ---
 
 I use Visual Studio Code recently as my main editor replacing Atom. Since 0.10, Visual Studio Code supports extension (package in Atom/Sublime). By default, Visual Studio Code has embedded useful extensions such as Git and Emmet. I found other useful extensions to improve my productivity. Here they are:
