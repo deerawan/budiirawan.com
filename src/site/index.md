@@ -3,7 +3,7 @@ subtitle: 👨‍💻 I'm a Frontend Developer who is passionate in testing, cle
 layout: layouts/base.njk
 pagination:
   data: collections.post
-  size: 40
+  size: 7
   alias: posts
   reverse: true
 ---

@@ -1,6 +1,6 @@
 ---
 title: "How to use Numeric Separators in Typescript"
-date: 2020-06-11
+date: 2020-07-07
 category: 'typescript'
 tags: ['typescript']
 ---
@@ -19,4 +19,4 @@ const total = 500_000_000;
 const amount = 99_999;
 const price = 12_445_633_335.55;
 ```
-We've added a few underscores and we could see that the overall reading experience is better. These underscores won't affect  Javascript output because they will be compiled away. 
+We've added a few underscores and we could see that the overall reading experience is better. These underscores won't affect Javascript output because they will be compiled away. 
