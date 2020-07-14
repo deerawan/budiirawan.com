@@ -1,5 +1,5 @@
 ---
-title: "Infer Type Using "in" Operator in Typescript"
+title: "Infer Type Using `in` Operator in Typescript"
 date: 2020-07-14
 category: 'typescript'
 tags: ['typescript']
@@ -18,8 +18,10 @@ interface Fish {
 }
 
 function getSmallPet(pet: Fish | Bird) {
+  // use a type guard function
   if (isFish(pet)) {
-    return pet.swim(); // pet: Fish
+    // inside this block, pet is Fish type
+    return pet.swim(); 
   }
 
   return pet.fly();
