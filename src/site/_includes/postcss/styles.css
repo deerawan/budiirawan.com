@@ -81,7 +81,7 @@ blockquote {
   padding: 0.5em 15px;
   quotes: "\201C""\201D""\2018""\2019";
 }
-blockquote:before {  
+blockquote:before {
   color: #ccc;
   content: open-quote;
   font-size: 4em;
@@ -99,9 +99,9 @@ blockquote p {
 }
 
 .subtitle {
-  font-size: 1.2em;  
+  font-size: 1.2em;
   margin-top: 0;
-  margin-bottom: 2em;  
+  margin-bottom: 2em;
 }
 
 ul, ol {
@@ -110,7 +110,7 @@ ul, ol {
 
 a {
   color: #0e76a9;
-  text-decoration: none;  
+  text-decoration: none;
 }
 a:hover,
 a:focus {
@@ -155,19 +155,19 @@ a:focus {
   display: inline;
 }
 
-.nav__link {  
+.nav__link {
   display: inline-block;
   background: $gray-color;
   padding: .5em 0;
   margin-left: 0;
   margin-right: 0.7em;
   width: 9em;
-  text-align: center;  
+  text-align: center;
   text-decoration: none;
   color: $text-color;
 }
 
-.nav__item--active .nav__link {    
+.nav__item--active .nav__link {
   color: #fff;
   background: $accent-color;
   font-weight: 600;
@@ -175,6 +175,13 @@ a:focus {
 
 .section__title {
   margin-bottom: 1em;
+}
+
+.section__subtitle {
+  border-bottom: 1px solid #e0e0e0;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
 }
 
 .article__link {
@@ -205,6 +212,28 @@ a:focus {
   margin-right: 1em;
   width: 40px;
   height: 40px;
+}
+
+.list {
+  padding-left: 0;
+}
+
+.list__item {
+  list-style: none;
+}
+
+.list__link {
+  color: $text-color;
+  display: grid;
+  grid-template-columns: auto 60px;
+  grid-gap: 1rem;
+  align-items: center;
+}
+
+.list__metadata {
+  display: block;
+  font-size: .9rem;
+  font-weight: 400;
 }
 
 code {
@@ -248,5 +277,5 @@ footer {
   border-top-width: 3px;
   border-top-style: solid;
   border-top-color: $text-color;
-  font-size: 0.7em;  
+  font-size: 0.7em;
 }
