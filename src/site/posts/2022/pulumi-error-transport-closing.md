@@ -48,7 +48,7 @@ I was wondering why that happens 🤔 . It was definitely related to golang (it 
 
 Then I noticed that maybe the `@pulumi/pulumi` packages also need to be upgraded.
 
-These below were the previous versions.
+These below were the previous versions. See that `@pulumi/pulumi` version `3.13.2` was slightly behind the pulumi CLI version `3.27.0`
 
 `package.json`
 
