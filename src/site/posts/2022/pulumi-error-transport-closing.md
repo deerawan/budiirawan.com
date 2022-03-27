@@ -66,7 +66,6 @@ npm uninstall @pulumi/awsx
 npm uninstall @pulumi/pulumi
 ```
 
-
 Then I installed the new ones (I specified them as `devDependencies`)
 
 ```ts
@@ -85,4 +84,4 @@ I got these versions
 "@pulumi/pulumi": "^3.27.0"
 ```
 
-Now it works again 🎉 🥳
+Running `pulumi up` worked again 🎉 🥳
