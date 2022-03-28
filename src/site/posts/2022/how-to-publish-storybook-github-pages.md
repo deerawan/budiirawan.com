@@ -70,10 +70,10 @@ jobs:
 
 ## Publish Storybook
 
-Push the changes to `main` branch to trigger Storybook deployment
+Push any change to `main` branch to trigger Storybook deployment
 
 If everything is OK, Storybook will be published to Github Pages at the given URL on Settings page.
 
 [![storybook github pages deployed](/images/2022/storybook-github-pages-deployed.jpg)](/images/2022/storybook-github-pages-deployed.jpg "Storybook github pages deployed")
 
-See the example [Github repository](https://github.com/deerawan/storybook-github-pages-example/settings/pages)
+See the example [Github repository](https://github.com/deerawan/storybook-github-pages-example)
